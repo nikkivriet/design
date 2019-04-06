@@ -5,8 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "predeploy": "yarn run build",
-    "deploy": "node ./node_modules/vue-gh-pages/index.js"
+    "predeploy": "yarn run build"
   },
   "dependencies": {
     "@babel/core": "^7.4.3",
