@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "predeploy": "yarn run build",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
     "@babel/core": "^7.4.3",
@@ -13,8 +15,7 @@
     "vue": "^2.6.6",
     "vue-gh-pages": "^1.19.0",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1",
-    "deploy": "node ./node_modules/vue-gh-pages/index.js"
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-service": "^3.5.0",
