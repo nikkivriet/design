@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <div id="nav">
       <!--<router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> -->
@@ -23,15 +23,29 @@
     <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
   </card>
 </div>
+<div id="app">
+
+    <button id="show-modal" @click="showModal = true">Show Modal</button>
+    <!-- use the modal component, pass in the prop -->
+    <modal v-if="showModal" @close="showModal = false">
+      <!--
+        you can use custom content here to overwrite
+        default content
+      -->
+      <h3 slot="header">custom header</h3>
+    </modal>
+  </div>
     </div>
    <!-- <router-view/> -->
   </div>
 </template>
 <script>
-import card from './components/Card1'
+import card from '@/components/Card1'
+import modal from '@/components/ModalWindow'
 export default {
   components: {
     card,
+    modal,
   },
   data () {
     return {
@@ -41,25 +55,12 @@ export default {
 }
 </script>
 
-<style>
+<style <style lang="scss">
 @import './assets/styles/card.scss';
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
+
+<style scoped>
+@import './assets/styles/googlefontcss.css';
+@import './assets/styles/modal.css';
+</style>
+

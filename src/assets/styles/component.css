@@ -74,8 +74,8 @@ Transform and style the two planes
 }
 
 .movie .info {
-	-webkit-transform: rotateY(90deg) translateZ(130px);
-	-moz-transform: rotateY(90deg) translateZ(130px);
+	-webkit-transform: rotateY(90deg) translateZ(130px) !important;
+	-moz-transform: rotateY(90deg) translateZ(130px) !important;
 	transform: rotateY(90deg) translateZ(130px);
 	border: 1px solid #B8B5B5;
 	font-size: 0.75em;
@@ -92,15 +92,15 @@ Shadow beneath the 3D object
 	position: absolute;
 	bottom: 0;
 	box-shadow: 0 30px 50px rgba(0,0,0,0.3);
-	-webkit-transform-origin: 100% 100%;
-	-moz-transform-origin: 100% 100%;
-	transform-origin: 100% 100%;
+	-webkit-transform-origin: 100% 100% !important;
+	-moz-transform-origin: 100% 100% !important;
+	transform-origin: 100% 100% !important;
 	-webkit-transform: rotateX(90deg) translateY(130px);
 	-moz-transform: rotateX(90deg) translateY(130px);
 	transform: rotateX(90deg) translateY(130px);
-	-webkit-transition: box-shadow 350ms;
-	-moz-transition: box-shadow 350ms;
-	transition: box-shadow 350ms;
+	-webkit-transition: box-shadow 350ms !important;
+	-moz-transition: box-shadow 350ms !important;
+	transition: box-shadow 350ms !important;
 }
 
 .csstransforms3d .movie:hover::after {
