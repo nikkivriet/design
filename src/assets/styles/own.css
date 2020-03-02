@@ -1,0 +1,28 @@
+.card-container {
+	width: 100%;
+}
+.body {
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+  	padding: 0px !important;
+}
+
+.title-1 {
+	margin-top: 45vh;
+}
+
+
+ .parallax-albin {
+  /* The image used */
+  background-image: url("/img/paris2.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+  z-index: 1;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

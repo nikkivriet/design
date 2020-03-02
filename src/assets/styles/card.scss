@@ -1,13 +1,13 @@
 $hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
 $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
-.body {
-  margin: 40px 0;
+body {
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 500;
-  background-color: #BCAAA4;
   -webkit-font-smoothing: antialiased;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .title {
@@ -27,10 +27,21 @@ h1+p, p+p {
 }
 
 .container {
-  padding: 40px 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #e1dfde;
+  vertical-align: middle;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #e1dfde;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+  vertical-align: middle;
 }
 
 .card-wrap {
