@@ -67,7 +67,7 @@
   </div>
 
 
-<div class="parallax-albin"></div>
+<!--<div class="parallax-albin"></div> -->
 
 <div id="app" class="container2">
   <card data-image="https://www.lofbergs.se/wp-content/uploads/2018/05/granatapple-1080-400x400.jpg" id="show-modalL" @click.native="openL()">

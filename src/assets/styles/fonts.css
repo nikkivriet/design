@@ -215,7 +215,7 @@ code {
 @media screen and (max-width: 1072px) {
   .container {
         -ms-grid-columns: auto 740px auto;
-        grid-template-columns: auto 740px auto;
+        /*grid-template-columns: auto 740px auto;  ÄNDRING*/
         grid-template-areas:
       ". img ."
       ". article ."
